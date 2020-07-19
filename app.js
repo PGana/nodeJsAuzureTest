@@ -6,7 +6,7 @@ var app = express();
 
 
 app.get('/get', function (req, res) {
-    res.status(400).send({ status: 'success', message: 'NodeJS apis are working as expected -T1' });
+    res.status(400).send({ status: 'success', message: 'NodeJS apis are working as expected -T2' });
 });
 
 
