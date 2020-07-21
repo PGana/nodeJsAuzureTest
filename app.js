@@ -9,7 +9,7 @@ app.get('/get', function (req, res) {
     res.status(400).send({ status: 'success', message: 'NodeJS apis are working as expected -T2' });
 });
 
-app.gt('/getCources', (req, res) =>{
+app.get('/getCources', (req, res) =>{
     var course = [
         {
             "id": 10001,
