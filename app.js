@@ -12,7 +12,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/get', function (req, res) {
-    res.status(400).send({ status: 'success', message: 'NodeJS apis are working as expected -T2' });
+    res.status(200).send({ status: 'success', message: 'NodeJS apis are working as expected -T2' });
 });
 
 app.get('/getCources', (req, res) => {
