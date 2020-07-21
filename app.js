@@ -138,7 +138,7 @@ app.get('/getCources', (req, res) => {
             "startDate": "2020/07/01"
         }
     ];
-    res.status(400).send(course);
+    res.status(200).send(course);
 })
 
 
