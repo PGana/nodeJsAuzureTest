@@ -5,11 +5,17 @@ var app = express();
 
 
 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.get('/get', function (req, res) {
     res.status(400).send({ status: 'success', message: 'NodeJS apis are working as expected -T2' });
 });
 
-app.get('/getCources', (req, res) =>{
+app.get('/getCources', (req, res) => {
     var course = [
         {
             "id": 10001,
